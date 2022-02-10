@@ -67,12 +67,12 @@ while running:
     if enemyx <= 0:
         enemyx = 0
         enemyy += 50
-        enemyx_change = +2
+        enemyx_change = +0.5
 
     elif enemyx >= 736:
         enemyy += 50
 
-        enemyx_change = -2
+        enemyx_change = -0.5
 
     player(playerx, playery)
     enemy(enemyx, enemyy)

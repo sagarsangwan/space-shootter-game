@@ -23,7 +23,7 @@ enemyimage = pygame.image.load("enemy.png")
 enemyx = random.randint(100, 700)
 enemyy = random.randint(50, 100)
 enemyx_change = 0.3
-enemyy_change = 0
+enemyy_change = 0.3
 
 
 def player(x, y):
@@ -47,9 +47,9 @@ while running:
         if event.type == pygame.KEYDOWN:
 
             if event.key == pygame.K_LEFT:
-                playerx_change = -0.6
+                playerx_change = -0.7
             if event.key == pygame.K_RIGHT:
-                playerx_change = +0.6
+                playerx_change = +0.7
         if event.type == pygame.KEYUP:
             if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
                 playerx_change = 0
